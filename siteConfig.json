@@ -1,9 +1,9 @@
 {
-  "client": "Casa da Construção",
+  "client": "VT Mobile",
   "routes": {
     "developmentPrefix": "mlocal",
     "siteDomain": [
-      "casadaconstrucao.net"
+      "forum.jogos.uol.com.br"
     ]
   }
 }

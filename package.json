@@ -1,7 +1,7 @@
 {
-  "name": "mobifycloud",
+  "name": "vtmobile",
   "version": "1.0.0",
-  "description": "MobifyClod Framework",
+  "description": "VT Mobile - MobifyClod Framework",
   "main": "server.js",
   "scripts": {
     "start": "sudo node server.js",
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pt-br/mobifycloud.git"
+    "url": "git+https://github.com/pt-br/vt-mobile.git"
   },
   "author": "@pt-br",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pt-br/mobifycloud/issues"
+    "url": "https://github.com/pt-br/vt-mobile/issues"
   },
-  "homepage": "http://mobifycloud.com"
+  "homepage": ""
 }

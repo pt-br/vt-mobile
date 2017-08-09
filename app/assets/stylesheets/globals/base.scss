@@ -14,6 +14,11 @@ body {
   overflow-x: hidden;
 }
 
+#content {
+  position: relative;
+  top: 55px;
+}
+
 a {
   color: $link_color;
   text-decoration: none;
@@ -101,7 +106,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-user-drag: none;
 }
 [data-ur-carousel-component="item"] {
-  display: inline-block;
   float: left;
   width: 100vw !important;
   height: 100%;

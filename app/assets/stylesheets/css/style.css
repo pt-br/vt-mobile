@@ -13,6 +13,12 @@
   height: 128px;
   display: inline-block; }
 
+.sprite-vtMini {
+  background: url("/sprites/vtMini.png") no-repeat;
+  width: 21px;
+  height: 26px;
+  display: inline-block; }
+
 /* Import Libs */
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2614,6 +2620,10 @@ body {
   min-height: 100%;
   overflow-x: hidden; }
 
+#content {
+  position: relative;
+  top: 55px; }
+
 a {
   color: #0070e0;
   text-decoration: none;
@@ -2685,48 +2695,35 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-user-drag: none; }
 
 [data-ur-carousel-component="item"] {
-  display: inline-block;
   float: left;
   width: 100vw !important;
   height: 100%; }
 
 /* Import sections */
 .mo-header-container {
-  background: #a02323; }
-  .mo-header-container #top-content-logo {
-    padding: 10px 10px 0 10px;
-    width: 70%;
-    margin: auto;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 55px;
+  background: #f6e6b4;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #f6e6b4 0%, #2b2020 0%, #ed9017 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f6e6b4 0%, #2b2020 0%, #ed9017 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f6e6b4 0%, #2b2020 0%, #ed9017 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .mo-header-container .mo-logo-container {
     text-align: center;
-    display: block; }
-  .mo-header-container #top-content-grupo {
-    padding: 0 10px 10px 10px;
-    text-align: center; }
-  .mo-header-container .mo-menu-button {
-    position: absolute;
-    padding: 10px;
-    color: #FFFFFF; }
-  .mo-header-container .mo-search-container {
-    padding: 10px;
-    position: relative; }
-    .mo-header-container .mo-search-container .mo-search-input {
-      width: 100%;
-      -webkit-appearance: none;
-      border: 0;
-      padding: 8px;
-      font-size: 14px;
-      border-radius: 0;
-      padding: 10px 30px 10px 10px; }
-    .mo-header-container .mo-search-container .mo-search-button {
-      color: #a0a0a0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      display: block;
-      right: 8px;
-      height: 16px;
-      padding: 10px; }
+    line-height: 55px; }
+    .mo-header-container .mo-logo-container .mo-logo-image {
+      top: 5px;
+      position: relative; }
+    .mo-header-container .mo-logo-container .mo-logo-text {
+      display: inline-block;
+      font-size: 22px;
+      color: #f3f3f3;
+      font-family: 'Roboto', sans-serif; }
 
 /* Navigation Menu - Background */
 .mo-menu-container {
@@ -2791,16 +2788,11 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: 100;
   background: transparent; }
 
-#breadcrumb {
-  padding: 10px;
-  font-size: 13px;
-  color: #323232; }
-  #breadcrumb a {
-    color: #323232;
-    text-decoration: underline; }
+.mo-breadcrumb-container {
+  position: relative !important; }
 
 .mo-footer {
-  background: #5a1313;
+  background: #e3491b;
   padding: 10px 10px 20px 10px;
   position: relative !important;
   height: inherit !important; }

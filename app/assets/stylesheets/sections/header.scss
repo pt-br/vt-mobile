@@ -1,49 +1,24 @@
 .mo-header-container {
-  background: $red4;
-
-  #top-content-logo {
-    padding: $padding $padding 0 $padding;
-    width: 70%;
-    margin: auto;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 55px;
+  background: #f6e6b4; /* Old browsers */
+  background: -moz-linear-gradient(left, #f6e6b4 0%, #2b2020 0%, #ed9017 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f6e6b4 0%,#2b2020 0%,#ed9017 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f6e6b4 0%,#2b2020 0%,#ed9017 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  .mo-logo-container {
     text-align: center;
-    display: block;
-  }
-
-  #top-content-grupo {
-    padding: 0 $padding $padding $padding;
-    text-align: center;
-  }
-
-  .mo-menu-button {
-    position: absolute;
-    padding: $padding;
-    color: $white;
-  }
-
-  .mo-search-container {
-    padding: $padding;
-    position: relative;
-    .mo-search-input {
-      width: 100%;
-      -webkit-appearance: none;
-      border: 0;
-      padding: $padding - 2;
-      font-size: $base_font_size;
-      border-radius: 0;
-      padding: $padding $padding * 3 $padding $padding;
+    line-height: 55px;
+    .mo-logo-image {
+      top: 5px;
+      position: relative;
     }
-
-    .mo-search-button {
-      color: $grey11;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      display: block;
-      right: $spacing - 2;
-      height: $spacing + 6;
-      padding: $padding;
+    .mo-logo-text {
+      display: inline-block;
+      font-size: 18px;
+      color: $white2;
+      font-family: 'Roboto', sans-serif;
     }
-
   }
 }

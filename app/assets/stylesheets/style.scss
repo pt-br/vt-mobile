@@ -1,0 +1,21 @@
+/* Import sprite sheet */
+@import 'sprites/sprites';
+
+/* Import Libs */
+@import 'lib/font-awesome/font-awesome';
+
+/* Import globals */
+@import 'globals/variables';
+@import 'globals/normalize';
+@import 'globals/reset';
+@import 'globals/base';
+
+/* Import sections */
+@import 'sections/header';
+@import 'sections/navigation';
+@import 'sections/breadcrumb';
+@import 'sections/footer';
+
+/* Page style imports */
+@import 'pages/home';
+@import 'pages/pdp';

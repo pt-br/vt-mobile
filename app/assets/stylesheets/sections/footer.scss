@@ -1,0 +1,16 @@
+.mo-footer {
+  background: $darkRed3;
+  padding: $padding $padding $padding * 2 $padding;
+  position: relative !important;
+  height: inherit !important;
+  .mo-footer-content {
+    text-align: center;
+    color: $white;
+    p:first-of-type {
+      padding-bottom: $padding * 2;
+    }
+    a {
+      color: $white;
+    }
+  }
+}

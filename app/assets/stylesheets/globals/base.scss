@@ -1,0 +1,108 @@
+/* Base will run into every page */
+html {
+  height: 100%;
+  overflow: auto !important;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  background: $body_background_color;
+  color: $text_black;
+  font-family: $font_family;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: $link_color;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+// Don't show the highlight of a link when tapped
+a, a:link {
+  -webkit-tap-highlight-color: rgba(229, 82, 19, 0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Super and Sub
+sup, sub{
+  height: 0;
+  line-height: 1;
+  vertical-align: baseline;
+  _vertical-align: bottom;
+  position: relative;
+  font-size: 12px;
+}
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+// Don't show type number rotator, its just silly
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.mo-hide {
+  display: none;
+}
+
+.mo-hide-force {
+  display: none !important;
+}
+
+.mo-hidden {
+  visibility: hidden;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.mo-clear {
+  clear: both;
+}
+
+/* Carousel styles */
+.mo-header-carousel-container {
+  height: 160px;
+  .mo-header-carousel-item {
+    background-size: 100% 100% !important;
+  }
+}
+
+[data-ur-set="carousel"] {
+  overflow: hidden;
+  position: relative;
+}
+[data-ur-carousel-component="scroll_container"] {
+  clear: both;
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+[data-ur-carousel-component="scroll_container"]:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+[data-ur-carousel-component="scroll_container"] img {
+  -webkit-user-drag: none;
+}
+[data-ur-carousel-component="item"] {
+  display: inline-block;
+  float: left;
+  width: 100vw !important;
+  height: 100%;
+}

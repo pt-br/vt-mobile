@@ -2958,11 +2958,8 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Page style imports */
 /* home.scss */
 .mo-home .mo-home-container {
-  padding: 10px; }
-
-.mo-home .mo-topics-container {
-  margin-bottom: 10px;
-  position: relative; }
+  padding: 10px;
+  margin-bottom: 55px; }
 
 /* pdp.scss */
 .mo-pdp .mo-product-table {

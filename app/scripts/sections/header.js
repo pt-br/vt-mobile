@@ -31,7 +31,7 @@ const setupLogo = () => {
       <div class="mo-logo-text">VT Mobile</div>
     </a>
     <div class="mo-login-container">
-      <a href="https://acesso.uol.com.br/login.html" class="mo-login-button fa fa-user fa-2x"></a>
+      <a href="https://acesso.uol.com.br/login.html?skin=forum-jogos&dest=REDIR|mlocal.forum.jogos.uol.com.br" class="mo-login-button fa fa-user fa-2x"></a>
     </div>
   `
   headerContainer.append(logoContainer);

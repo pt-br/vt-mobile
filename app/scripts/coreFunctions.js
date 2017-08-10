@@ -80,7 +80,7 @@ const coreFunctions = {
   },
 
   insertMainStyle: () => {
-    head.append(`<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">`);
+    head.append(`<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">`);
     head.append(`<link rel="stylesheet" href="//${hostPath}/styles/style.css">`);
   },
 

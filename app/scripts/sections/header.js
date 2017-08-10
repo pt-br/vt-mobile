@@ -26,9 +26,12 @@ const constructor = () => {
 
 const setupLogo = () => {
   const logoContainer = `
-    <div class="mo-logo-container">
+    <a href="/vale-tudo_f_57" class="mo-logo-container">
       <div class="mo-logo-image sprite-vtMini"></div>
       <div class="mo-logo-text">VT Mobile</div>
+    </a>
+    <div class="mo-login-container">
+      <a href="https://acesso.uol.com.br/login.html" class="mo-login-button fa fa-user fa-2x"></a>
     </div>
   `
   headerContainer.append(logoContainer);

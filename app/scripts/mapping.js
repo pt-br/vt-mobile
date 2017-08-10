@@ -6,24 +6,9 @@ function mapping(mappingUrl) {
  /* Map URLs here */
   pageTypes.push(
     {
-      type: "home",
-      url: /(index|^\/$|^\/\?)/gi,
+      type: "homeVt",
+      url: /\/vale-tudo/gi,
       appFile: ["./pages/home/home.js"]
-    },
-    {
-      type: "pdp",
-      url: /produto\-/gi,
-      appFile: ["./pages/browse/pdp.js"]
-    },
-    {
-      type: "404",
-      url: /menu/g,
-      appFile: ["./pages/browse/menu.js"]
-    },
-    {
-      type: "checkout",
-      url: /checkout/g,
-      appFile: ["./pages/checkout/checkout.js"]
     },
   );
 

@@ -21,15 +21,15 @@
 
 /* Import Libs */
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1847,6 +1847,7 @@
   content: ""; }
 
 .fa-battery-4:before,
+.fa-battery:before,
 .fa-battery-full:before {
   content: ""; }
 
@@ -2192,6 +2193,143 @@
 .fa-fa:before,
 .fa-font-awesome:before {
   content: ""; }
+
+.fa-handshake-o:before {
+  content: ""; }
+
+.fa-envelope-open:before {
+  content: ""; }
+
+.fa-envelope-open-o:before {
+  content: ""; }
+
+.fa-linode:before {
+  content: ""; }
+
+.fa-address-book:before {
+  content: ""; }
+
+.fa-address-book-o:before {
+  content: ""; }
+
+.fa-vcard:before,
+.fa-address-card:before {
+  content: ""; }
+
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: ""; }
+
+.fa-user-circle:before {
+  content: ""; }
+
+.fa-user-circle-o:before {
+  content: ""; }
+
+.fa-user-o:before {
+  content: ""; }
+
+.fa-id-badge:before {
+  content: ""; }
+
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: ""; }
+
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: ""; }
+
+.fa-quora:before {
+  content: ""; }
+
+.fa-free-code-camp:before {
+  content: ""; }
+
+.fa-telegram:before {
+  content: ""; }
+
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: ""; }
+
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: ""; }
+
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: ""; }
+
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: ""; }
+
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: ""; }
+
+.fa-shower:before {
+  content: ""; }
+
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: ""; }
+
+.fa-podcast:before {
+  content: ""; }
+
+.fa-window-maximize:before {
+  content: ""; }
+
+.fa-window-minimize:before {
+  content: ""; }
+
+.fa-window-restore:before {
+  content: ""; }
+
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: ""; }
+
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: ""; }
+
+.fa-bandcamp:before {
+  content: ""; }
+
+.fa-grav:before {
+  content: ""; }
+
+.fa-etsy:before {
+  content: ""; }
+
+.fa-imdb:before {
+  content: ""; }
+
+.fa-ravelry:before {
+  content: ""; }
+
+.fa-eercast:before {
+  content: ""; }
+
+.fa-microchip:before {
+  content: ""; }
+
+.fa-snowflake-o:before {
+  content: ""; }
+
+.fa-superpowers:before {
+  content: ""; }
+
+.fa-wpexplorer:before {
+  content: ""; }
+
+.fa-meetup:before {
+  content: ""; }
 
 .sr-only {
   position: absolute;
@@ -2705,7 +2843,7 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: 10;
   width: 100%;
   height: 55px;
-  background: #eada7b; }
+  background: #f27f53; }
   .mo-header-container .mo-logo-container {
     text-align: center;
     line-height: 55px;
@@ -2718,14 +2856,14 @@ input[type="number"]::-webkit-outer-spin-button {
     .mo-header-container .mo-logo-container .mo-logo-text {
       display: inline-block;
       font-size: 20px;
-      color: #565656;
+      color: #f3f3f3;
       font-family: 'Roboto', sans-serif; }
   .mo-header-container .mo-login-container {
     position: absolute;
     top: 12px;
     right: 12px; }
     .mo-header-container .mo-login-container .mo-login-button {
-      color: #565656; }
+      color: #f3f3f3; }
 
 /* Navigation Menu - Background */
 .mo-menu-container {
@@ -2793,18 +2931,23 @@ input[type="number"]::-webkit-outer-spin-button {
 .mo-breadcrumb-container {
   position: relative !important; }
 
-.mo-footer {
-  background: #e3491b;
-  padding: 10px 10px 20px 10px;
-  position: relative !important;
-  height: inherit !important; }
-  .mo-footer .mo-footer-content {
-    text-align: center;
-    color: #FFFFFF; }
-    .mo-footer .mo-footer-content p:first-of-type {
-      padding-bottom: 20px; }
-    .mo-footer .mo-footer-content a {
-      color: #FFFFFF; }
+.mo-footer-container {
+  position: fixed;
+  z-index: 10;
+  bottom: -1px;
+  width: 100%;
+  height: 55px;
+  background: #f27f53;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .mo-footer-container .mo-footer-button {
+    padding: 0 30px;
+    color: #f3f3f3; }
 
 /* Page style imports */
 /* home.scss */

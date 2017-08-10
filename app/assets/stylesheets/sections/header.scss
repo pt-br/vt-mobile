@@ -3,11 +3,11 @@
   z-index: 10;
   width: 100%;
   height: 55px;
-  background: #eada7b;
-  // background: #f6e6b4; /* Old browsers */
-  // background: -moz-linear-gradient(left, #f6e6b4 0%, #2b2020 0%, #ed9017 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(left, #f6e6b4 0%,#2b2020 0%,#ed9017 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to right, #f6e6b4 0%,#2b2020 0%,#ed9017 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #f27f53;
+  // background: #380600; /* Old browsers */
+  // background: -moz-linear-gradient(left, #380600 1%, #c72200 59%, #c72200 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left, #380600 1%,#c72200 59%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to right, #380600 1%,#c72200 59%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   .mo-logo-container {
     text-align: center;
     line-height: 55px;
@@ -21,8 +21,8 @@
     .mo-logo-text {
       display: inline-block;
       font-size: 20px;
-      // color: $white2;
-      color: #565656;
+      color: $white2;
+      // color: #565656;
       font-family: 'Roboto', sans-serif;
     }
   }
@@ -31,8 +31,8 @@
     top: 12px;
     right: 12px;
     .mo-login-button {
-      // color: $white2;
-      color: #565656;
+      color: $white2;
+      // color: #565656;
     }
   }
 }

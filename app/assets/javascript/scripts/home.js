@@ -1,4 +1,3 @@
-/* All scripts here will be compiled into mobifycloud.js */
 jQuery(document).ready(function() {
   /* Variable declarations */
   var paginationContainer = jQuery('.mo-pagination-container');
@@ -34,4 +33,3 @@ jQuery(document).ready(function() {
   });
 
 });
-

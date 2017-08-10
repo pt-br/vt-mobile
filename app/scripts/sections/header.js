@@ -1,4 +1,4 @@
-const { massiveHide } = require('../coreFunctions'); 
+const { massiveHide } = require('../coreFunctions');
 
 const header = {
   init: () => {
@@ -17,7 +17,7 @@ const constructor = () => {
     headerContainer.find('#header-actions-ul'),
     headerContainer.find('#header-facebook-like'),
   ];
-  
+
   massiveHide(hideElements);
 
   headerContainer.addClass('mo-header-container');
@@ -33,7 +33,7 @@ const setupLogo = () => {
     <div class="mo-login-container">
       <a href="https://acesso.uol.com.br/login.html?skin=forum-jogos&dest=REDIR|mlocal.forum.jogos.uol.com.br" class="mo-login-button fa fa-user fa-2x"></a>
     </div>
-  `
+  `;
   headerContainer.append(logoContainer);
 }
 

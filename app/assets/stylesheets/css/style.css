@@ -2958,8 +2958,49 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Page style imports */
 /* home.scss */
 .mo-home .mo-home-container {
-  padding: 10px;
+  padding: 0 10px 10px;
   margin-bottom: 55px; }
+
+.mo-home .mo-pagination-container {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .mo-home .mo-pagination-container .mo-pagination-section {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    color: #595959;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .mo-home .mo-pagination-container .mo-pagination-section#mo-section-left {
+      text-align: left; }
+    .mo-home .mo-pagination-container .mo-pagination-section#mo-section-middle {
+      text-align: center;
+      font-size: 13px;
+      -webkit-flex: 3 0 0;
+      flex: 3 0 0; }
+    .mo-home .mo-pagination-container .mo-pagination-section#mo-section-right {
+      text-align: right; }
+    .mo-home .mo-pagination-container .mo-pagination-section.inactive {
+      color: #C7C8D0; }
+  .mo-home .mo-pagination-container .mo-pagination-icon {
+    font-size: 1.5em; }
+  .mo-home .mo-pagination-container .mo-pagination-button {
+    font-size: 14px; }
+    .mo-home .mo-pagination-container .mo-pagination-button#next {
+      padding-right: 5px; }
+    .mo-home .mo-pagination-container .mo-pagination-button#prev {
+      padding-left: 5px; }
 
 /* pdp.scss */
 .mo-pdp .mo-product-table {

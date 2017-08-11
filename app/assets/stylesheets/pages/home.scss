@@ -112,6 +112,10 @@
       }
       .mo-info-icon {
         padding-right: 5px;
+        &#last-icon {
+          padding-right: 0;
+          padding-left: 5px;
+        }
       }
     }
   }

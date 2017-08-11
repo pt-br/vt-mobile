@@ -77,20 +77,30 @@ const setupTopicList = () => {
     `
       <div class="mo-topic-menu-container">
         <div class="mo-info-container">
-          <div class="mo-info-icon fa fa-file"></div>
-          <div class="mo-info-count">4</div>
+          <div class="mo-info-icon fa fa-comment"></div>
+          <div id="mo-post-count" class="mo-info-count">4</div>
         </div>
         <div class="mo-info-container">
-          <div class="mo-info-icon fa fa-file"></div>
-          <div class="mo-info-count">20</div>
+          <div class="mo-info-icon fa fa-eye"></div>
+          <div id="mo-view-count" class="mo-info-count">20</div>
         </div>
         <div class="mo-info-container">
-          <div class="mo-info-icon fa fa-file"></div>
-          <div class="mo-info-count">Última</div>
+          <div id="last-count" class="mo-info-count">Última</div>
+          <div id="last-icon" class="mo-info-icon fa fa-arrow-circle-right"></div>
         </div>
       </div>
     `
   );
+
+  const sitePost = topicBlock.find('.respostas');
+  const nearPostCount = sitePost.parent().nextAll('.mo-topic-menu-container').find('#mo-post-count');
+  nearPostCount.append(sitePost);
+
+  // const sitePostText = topicMenuContainer.prevAll('div').children('.respostas').text();
+  // console.log('sitePostText: ', sitePostText);
+  // postCount.text(sitePostText);
+
+  // sitePost.appendTo(sitePost.prev().next());
 
   const hideElements = [
     topicBlock.find('.quickPaging'),

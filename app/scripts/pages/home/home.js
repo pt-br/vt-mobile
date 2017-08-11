@@ -56,10 +56,51 @@ const setupTopicList = () => {
   tableDump('#topics', 'mo-topics-container');
   const topicsContainer = homeContainer.find('#mo-topics-container');
   const topicBlock = topicsContainer.children('div');
+  const topicTitle = topicBlock.find('.center + div');
+  const authorContainer = topicTitle.next('div');
+  const authorTitle = authorContainer.find('.autor');
+
+  topicTitle.prepend(
+    `
+      <div class="mo-topic-image fa fa-file fa-2x"></div>
+    `
+  );
+
+  authorTitle.prepend(
+    `
+      Postado por 
+    `
+  );
+  authorTitle.find('a').attr('href', '').attr('onclick', 'event.preventDefault()');
+
+  topicBlock.append(
+    `
+      <div class="mo-topic-menu-container">
+        <div class="mo-info-container">
+          <div class="mo-info-icon fa fa-file"></div>
+          <div class="mo-info-count">4</div>
+        </div>
+        <div class="mo-info-container">
+          <div class="mo-info-icon fa fa-file"></div>
+          <div class="mo-info-count">20</div>
+        </div>
+        <div class="mo-info-container">
+          <div class="mo-info-icon fa fa-file"></div>
+          <div class="mo-info-count">Última</div>
+        </div>
+      </div>
+    `
+  );
+
+  const hideElements = [
+    topicBlock.find('.quickPaging'),
+  ];
+
+  massiveHide(hideElements);
   
   topicBlock.addClass('mo-topic-block');
-
-  // homeContainer.find('#actionTopics + div > div[data-mo-was-tr]');
+  topicTitle.addClass('mo-topic-title-container');
+  authorContainer.addClass('mo-topic-author-container');
 };
 
 module.exports = home;

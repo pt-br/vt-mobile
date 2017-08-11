@@ -18,6 +18,7 @@ const constructor = () => {
   const hideElements = [
     homeContainer.find('#goto'),
     actionContainer.find('.left'),
+    homeContainer.find('#actionTopics:last-of-type #actionTopicsContent'),
   ];
 
   massiveHide(hideElements);
@@ -68,7 +69,7 @@ const setupTopicList = () => {
 
   authorTitle.prepend(
     `
-      Postado por 
+      Postado por
     `
   );
   authorTitle.find('a').attr('href', '').attr('onclick', 'event.preventDefault()');
@@ -78,36 +79,46 @@ const setupTopicList = () => {
       <div class="mo-topic-menu-container">
         <div class="mo-info-container">
           <div class="mo-info-icon fa fa-comment"></div>
-          <div id="mo-post-count" class="mo-info-count">4</div>
+          <div id="mo-post-count" class="mo-info-count"></div>
         </div>
         <div class="mo-info-container">
           <div class="mo-info-icon fa fa-eye"></div>
-          <div id="mo-view-count" class="mo-info-count">20</div>
+          <div id="mo-view-count" class="mo-info-count"></div>
         </div>
-        <div class="mo-info-container">
-          <div id="last-count" class="mo-info-count">Última</div>
-          <div id="last-icon" class="mo-info-icon fa fa-arrow-circle-right"></div>
-        </div>
+        <div id="mo-last-container"></div>
       </div>
     `
   );
 
+  const topicMenuContainer = topicBlock.find('.mo-topic-menu-container');
   const sitePost = topicBlock.find('.respostas');
-  const nearPostCount = sitePost.parent().nextAll('.mo-topic-menu-container').find('#mo-post-count');
-  nearPostCount.append(sitePost);
+  const siteCount = topicBlock.find('.exibicoes');
+  const siteLastLink = topicBlock.find('.lastmessage > a:first-of-type');
 
-  // const sitePostText = topicMenuContainer.prevAll('div').children('.respostas').text();
-  // console.log('sitePostText: ', sitePostText);
-  // postCount.text(sitePostText);
+  console.log(siteLastLink);
 
-  // sitePost.appendTo(sitePost.prev().next());
+  topicMenuContainer.map((index, topic) => {
+    const postCount = $(topic).find('#mo-post-count');
+    const viewCount = $(topic).find('#mo-view-count');
+    const lastContainer = $(topic).find('#mo-last-container');
+    postCount.append($(sitePost)[index]);
+    viewCount.append($(siteCount)[index]);
+    lastContainer.append($(siteLastLink)[index]);
+    lastContainer.find('a').addClass('mo-info-container').append(
+      `
+        <div class="mo-info-count">Última</div>
+        <div id="mo-last-icon" class="mo-info-icon fa fa-arrow-circle-right"></div>
+      `
+    );
+  });
 
   const hideElements = [
     topicBlock.find('.quickPaging'),
+    topicBlock.find('.lastmessage'),
   ];
 
   massiveHide(hideElements);
-  
+
   topicBlock.addClass('mo-topic-block');
   topicTitle.addClass('mo-topic-title-container');
   authorContainer.addClass('mo-topic-author-container');

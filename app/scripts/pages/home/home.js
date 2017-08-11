@@ -1,4 +1,4 @@
-const { massiveHide } = require('../../coreFunctions');
+const { massiveHide, tableDump } = require('../../coreFunctions');
 
 const home = {
   init: () => {
@@ -51,8 +51,15 @@ const setupPagination = () => {
 };
 
 const setupTopicList = () => {
-  const topicsContainer = homeContainer.find('#topics');
-  topicsContainer.addClass('mo-topics-container');
+  homeContainer.find('#topics thead').remove();
+
+  tableDump('#topics', 'mo-topics-container');
+  const topicsContainer = homeContainer.find('#mo-topics-container');
+  const topicBlock = topicsContainer.children('div');
+  
+  topicBlock.addClass('mo-topic-block');
+
+  // homeContainer.find('#actionTopics + div > div[data-mo-was-tr]');
 };
 
 module.exports = home;

@@ -34,17 +34,12 @@ function mobify(callback, data, mappingUrl, contentType, environment) {
     coreFunctions.insertMainJS();
     coreFunctions.insertMainStyle();
 
-    /* Custom functions execution */
-    customFunctions.includeFacebookAPI();
-
     /* Init common sections */
     header.init();
     footer.init();
 
     /* Exec mappings */
     mapping(mappingUrl);
-
-    customFunctions.hideCarouselIfNotHome();
 
     /* Output final content */
     const finalHtml = $('html').toString();

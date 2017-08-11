@@ -118,6 +118,17 @@ const coreFunctions = {
       element.addClass('mo-hide');
     });
   },
+
+  tableDump: (tableSelector, id) => {
+    $(tableSelector).replaceWith($(tableSelector).html()
+      .replace(/<tbody/gi, `<div id="${id}" data-mo-was-tbody`)
+      .replace(/<tr/gi, "<div data-mo-was-tr")
+      .replace(/<\/tr>/gi, "</div>")
+      .replace(/<td/gi, "<div data-mo-was-td")
+      .replace(/<\/td>/gi, "</div>")
+      .replace(/<\/tbody/gi, "<\/div")
+    );
+  },
 }
 
 module.exports = coreFunctions;

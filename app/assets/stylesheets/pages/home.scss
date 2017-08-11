@@ -1,8 +1,10 @@
 /* home.scss */
 .mo-home {
   .mo-home-container {
-    padding: 0 $padding $padding;
     margin-bottom: 55px;
+  }
+  #actionTopicsContent {
+    padding: 0 $padding;
   }
   .mo-pagination-container {
     width: 100%;
@@ -52,6 +54,12 @@
       &#prev {
         padding-left: 5px;
       }
+    }
+  }
+  #mo-topics-container {
+    .mo-topic-block {
+      padding: $padding;
+      border-bottom: 1px solid black;
     }
   }
 }

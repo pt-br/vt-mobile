@@ -85,10 +85,12 @@
     .mo-topic-author-container {
       padding-left: 38px;
       font-style: italic;
-      .autor > a {
-        font-weight: bold;
-        text-decoration: underline;
-        color: $grey3;
+      .autor {
+        color: $grey15;
+        a {
+          font-weight: bold;
+          color: $grey15;
+        }
       }
     }
     .mo-topic-menu-container {

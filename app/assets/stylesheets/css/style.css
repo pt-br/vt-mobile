@@ -3029,10 +3029,11 @@ input[type="number"]::-webkit-outer-spin-button {
   .mo-home #mo-topics-container .mo-topic-author-container {
     padding-left: 38px;
     font-style: italic; }
-    .mo-home #mo-topics-container .mo-topic-author-container .autor > a {
-      font-weight: bold;
-      text-decoration: underline;
-      color: #666666; }
+    .mo-home #mo-topics-container .mo-topic-author-container .autor {
+      color: #8c8b8b; }
+      .mo-home #mo-topics-container .mo-topic-author-container .autor a {
+        font-weight: bold;
+        color: #8c8b8b; }
   .mo-home #mo-topics-container .mo-topic-menu-container {
     width: 100%;
     height: 33px;

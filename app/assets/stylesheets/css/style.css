@@ -2849,7 +2849,7 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: 10;
   width: 100%;
   height: 55px;
-  background: #f27f53; }
+  background: #f3f3f3; }
   .mo-header-container .mo-logo-container {
     text-align: center;
     line-height: 55px;
@@ -2862,14 +2862,14 @@ input[type="number"]::-webkit-outer-spin-button {
     .mo-header-container .mo-logo-container .mo-logo-text {
       display: inline-block;
       font-size: 24px;
-      color: #f3f3f3;
+      color: #383737;
       font-family: 'Shadows Into Light', cursive; }
   .mo-header-container .mo-login-container {
     position: absolute;
     top: 12px;
     right: 12px; }
     .mo-header-container .mo-login-container .mo-login-button {
-      color: #f3f3f3; }
+      color: #383737; }
 
 /* Navigation Menu - Background */
 .mo-menu-container {
@@ -2943,7 +2943,7 @@ input[type="number"]::-webkit-outer-spin-button {
   bottom: 0px;
   width: 100%;
   height: 55px;
-  background: #f27f53;
+  background: #f3f3f3;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
@@ -2952,7 +2952,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-justify-content: center;
   justify-content: center; }
   .mo-footer-container .mo-footer-button {
-    color: #f3f3f3;
+    color: #383737;
     width: 75px;
     text-align: center; }
 

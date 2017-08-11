@@ -4,7 +4,8 @@
   bottom: 0px;
   width: 100%;
   height: 55px;
-  background: #f27f53;
+  // background: #f27f53;
+  background: $white2;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
@@ -13,7 +14,7 @@
   -webkit-justify-content: center;
   justify-content: center;
   .mo-footer-button {
-    color: $white2;
+    color: $black2;
     width: 75px;
     text-align: center;
   }

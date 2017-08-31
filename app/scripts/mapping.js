@@ -10,6 +10,11 @@ function mapping(mappingUrl) {
       url: /\/vale-tudo/gi,
       appFile: ["./pages/home/home.js"]
     },
+    {
+      type: "topicPage",
+      url: /_t_/gi,
+      appFile: ["./pages/browse/topic.js"]
+    },
   );
 
   /* Router will import a file according to mapping */

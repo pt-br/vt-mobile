@@ -1,0 +1,13 @@
+/* topic.scss */
+.mo-topic {
+  .mo-topic-container {
+    margin-bottom: 55px;
+  }
+  #actionTopicsContent {
+    padding: 0 $padding;
+  }
+  // Global error message hidden by default
+  .msg.error.hidden {
+    display: none;
+  }
+}
